@@ -1,5 +1,5 @@
 ##################################
-# Attempted python implementation of Markov brains,
+# A (probably flawed) implementation of Markov brains,
 # Based on article: http://devosoft.org/a-quick-introduction-to-markov-network-brains/
 #   from devolab of Michigan State University
 #
