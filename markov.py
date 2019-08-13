@@ -18,6 +18,9 @@ import numpy
 from functools import reduce
 from collections import Counter
 
+
+#These constants are arbitrary and may be changed based on intuition, performance constraints,
+#  or any other reason.
 global THRESHOLD_CONSTANT
 global TIMER_CONSTANT
 THRESHOLD_CONSTANT = 48
@@ -339,7 +342,7 @@ class MarkovBrain:
                     tableValues.append(value)
                 
                 self.gates.append(TernaryGate( numInputs, numOutputs, inputIndices, outputIndices, tableValues))
-            #NN gate
+            #Artificial Neuron gate
             elif self.genome.sequence[y] == 47 and self.genome.sequence[(y + 1) % len(self.genome.sequence)] == 208:  
                 numInputs = (self.genome.sequence[(y + 2) % len(self.genome.sequence)] % 4) + 1
                 numOutputs = (self.genome.sequence[(y + 3) % len(self.genome.sequence)] % 4) + 1
