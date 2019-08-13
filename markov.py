@@ -5,6 +5,13 @@
 #
 # Nicholas Harris
 ##################################
+
+##################################
+# In this code the greatest emphasis was placed on clarity of structure and readability.
+# No effort has been made to optimize.
+#
+# See "example.py" for a demonstration on using the code defined here.
+##################################
 import random
 import math
 import numpy
